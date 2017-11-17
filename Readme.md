@@ -19,11 +19,11 @@
 
 ## e2e-testplat alpine packages
 
-ttf-freefont
-eudev=3.2.2-r1
-dbus=1.10.14-r0
-dbus-x11=1.10.14-r0
-xvfb=1.19.3-r2
-chromium=57.0.2987.133-r0
-chromium-chromedriver=57.0.2987.133-r0
-firefox-esr=52.3.0-r0
+- ttf-freefont
+- eudev=3.2.2-r1
+- dbus=1.10.14-r0
+- dbus-x11=1.10.14-r0
+- xvfb=1.19.3-r2
+- chromium=57.0.2987.133-r0
+- chromium-chromedriver=57.0.2987.133-r0
+- firefox-esr=52.3.0-r0
