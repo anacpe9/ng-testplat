@@ -30,4 +30,4 @@
 - xvfb=1.19.3-r2
 - chromium=57.0.2987.133-r0
 - chromium-chromedriver=57.0.2987.133-r0
-- firefox-esr=52.3.0-r0
+- firefox-esr=52.5.0-r0
