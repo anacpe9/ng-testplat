@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/cha-node/ng:1.5.5-alpine
+FROM registry.gitlab.com/cha-node/ng:1.6.0-alpine
 
 LABEL maintainer="Anucha Nualsi <ana.cpe9@gmail.com>"
 
