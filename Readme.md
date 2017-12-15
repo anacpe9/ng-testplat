@@ -35,3 +35,13 @@
 - chromium=57.0.2987.133-r0
 - chromium-chromedriver=57.0.2987.133-r0
 - firefox-esr=52.5.0-r0
+
+## Source Repository
+
+- [**cha-node/ng-testplat | Gitlab**](https://gitlab.com/cha-node/ng-testplat) - main repo.
+- [anacpe9/ng-testplat | Github](https://github.com/anacpe9/ng-testplat) - mirror.
+- [anacpe9/ng-testplat | Bitbucket](https://bitbucket.org/anacpe9/ng-testplat) - mirror.
+
+## License
+
+[MIT](LICENSE)
