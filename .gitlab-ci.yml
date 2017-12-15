@@ -30,7 +30,10 @@ build job:
     docker build --pull 
     -t $CI_REGISTRY_IMAGE:$TMPTAG
     -t $CI_REGISTRY_IMAGE:latest
+    -t $DOCKER_REGISTRY_DOCKERHUB_REPO:$TMPTAG
+    -t $DOCKER_REGISTRY_DOCKERHUB_REPO:latest
     .
+  - docker images
   - docker push $CI_REGISTRY_IMAGE:$TMPTAG
   - docker push $CI_REGISTRY_IMAGE:latest
   - docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD $DOCKERHUB_REGISTRY
