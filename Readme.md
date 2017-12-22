@@ -3,20 +3,21 @@
 ## docker-image dependencies graph
 
 ```text
-+-- alpine:3.6 (3.962 MB)                                                       ====> official image
++-- alpine:3.6 (3.962 MB)                                 ====> official image
     |
-    +-- node:9.3.0-alpine (64.64 MB)                                            ====> official image
+    +-- node:9.3.0-alpine (64.64 MB)                      ====> official image
     |   |
-    |   +-- registry.gitlab.com/cha-node/ng:1.6.0-rc.1-alpine (108 MB)          ====> optional ***
-    |   `-- registry.gitlab.com/cha-node/ng:1.6.1-alpine (108 MB)               ====> base images
+    |   +-- anacha/ng:1.6.0-rc.1-alpine (108 MB)          ====> optional ***
+    |   `-- anacha/ng:1.6.1-alpine (108 MB)               ====> base images
     |       |
-    |      (+)-- registry.gitlab.com/cha-node/ng-testplat:1.6.1-alpine (285 MB) ====> this project ***
+    |      (+)-- anacha/ng-testplat:1.6.1-alpine (285 MB) ====> this project ***
     |       |
-    `-------'--- registry.gitlab.com/cha-node/e2e-testplat:57 (181 MB)          ====> (Optional for other projects)
+    `-------'--- anacha/e2e-testplat:57 (181 MB)          ====> (Optional for other projects)
 ```
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
 | ------------------------ | --------------- | ----------------- | ------------ |
+| ng-testplat:1.6.2-alpine | ng:1.6.2-alpine | node:9.3.0-alpine | alpine:3.6   |
 | ng-testplat:1.6.1-alpine | ng:1.6.1-alpine | node:9.3.0-alpine | alpine:3.6   |
 | ng-testplat:1.6.0-alpine | ng:1.6.0-alpine | node:9.2.0-alpine | alpine:3.6   |
 | ng-testplat:1.5.5-alpine | ng:1.5.5-alpine | node:9.2.0-alpine | alpine:3.6   |
