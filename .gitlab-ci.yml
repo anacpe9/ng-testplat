@@ -31,7 +31,7 @@ build job:
   only:
     - master
   script:
-  - TMPTAG="1.7.2-alpine"
+  - TMPTAG="1.7.3-alpine"
   - docker info
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
   - >-
