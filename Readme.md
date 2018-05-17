@@ -12,7 +12,7 @@
     |       |
     |      (+)-- anacha/ng-testplat:6.0.3-alpine (285 MB) ====> this project ***
     |       |
-    `-------'--- anacha/e2e-testplat:57 (181 MB)          ====> (Optional for other projects)
+    `-------'--- anacha/e2e-testplat:61-alpine (181 MB)   ====> (Optional for other projects)
 ```
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
