@@ -44,7 +44,7 @@
 - eudev=3.2.4-r1
 - dbus=1.10.24-r0
 - dbus-x11=1.10.24-r0
-- xvfb=1.19.5-r2
+- xvfb=1.19.5-r0
 - chromium=61.0.3163.100-r0
 - chromium-chromedriver=61.0.3163.100-r0
 - firefox-esr=52.7.3-r0
