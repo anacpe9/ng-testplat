@@ -3,20 +3,21 @@
 ## docker-image dependencies graph
 
 ```text
-+-- alpine:3.6 (3.962 MB)                                 ====> official image
++-- alpine:3.7 (3.962 MB)                                 ====> official image
     |
-    +-- node:9.10.1-alpine (64.64 MB)                     ====> official image
+    +-- node:10.1.0-alpine (64.64 MB)                     ====> official image
     |   |
     |   +-- anacha/ng:6.0.0-rc.2-alpine (108 MB)          ====> optional ***
-    |   `-- anacha/ng:1.7.4-alpine (108 MB)               ====> base images
+    |   `-- anacha/ng:6.0.3-alpine (108 MB)               ====> base images
     |       |
-    |      (+)-- anacha/ng-testplat:1.7.4-alpine (285 MB) ====> this project ***
+    |      (+)-- anacha/ng-testplat:6.0.3-alpine (285 MB) ====> this project ***
     |       |
     `-------'--- anacha/e2e-testplat:57 (181 MB)          ====> (Optional for other projects)
 ```
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
 | ------------------------ | --------------- | ----------------- | ------------ |
+| ng-testplat:6.0.3-alpine | ng:6.0.3-alpine | node:10.1.0-alpine| alpine:3.7   |
 | ng-testplat:1.7.4-alpine | ng:1.7.4-alpine | node:9.10.1-alpine| alpine:3.6   |
 | ng-testplat:1.7.3-alpine | ng:1.7.3-alpine | node:9.7.1-alpine | alpine:3.6   |
 | ng-testplat:1.7.2-alpine | ng:1.7.2-alpine | node:9.6.1-alpine | alpine:3.6   |
