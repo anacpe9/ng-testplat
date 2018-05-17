@@ -12,13 +12,13 @@ RUN chmod a+x /entrypoint.cha.sh && \
     apk upgrade && \
     apk add --no-cache --update \
         ttf-freefont \
-        "eudev=3.2.2-r1" \
-        "dbus=1.10.14-r0" \
-        "dbus-x11=1.10.14-r0" \
-        "xvfb=1.19.3-r2" \
-        "chromium=57.0.2987.133-r0" \
-        "chromium-chromedriver=57.0.2987.133-r0" \
-        "firefox-esr=52.5.0-r0" && \
+        "eudev=3.2.4-r1" \
+        "dbus=1.10.24-r0" \
+        "dbus-x11=1.10.24-r0" \
+        "xvfb=1.19.5-r2" \
+        "chromium=61.0.3163.100-r0" \
+        "chromium-chromedriver=61.0.3163.100-r0" \
+        "firefox-esr=52.7.3-r0" && \
     ln -sf /usr/bin/dbus-daemon /bin/dbus-daemon && \
     ln -sf /usr/bin/dbus-uuidgen /bin/dbus-uuidgen && \
     ln -sf /usr/bin/dbus-binding-tool /dbus-binding-tool && \
