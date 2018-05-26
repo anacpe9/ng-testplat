@@ -18,7 +18,7 @@ RUN chmod a+x /entrypoint.cha.sh && \
         "xvfb=1.19.5-r0" \
         "chromium=61.0.3163.100-r0" \
         "chromium-chromedriver=61.0.3163.100-r0" \
-        "firefox-esr=52.7.3-r0" && \
+        "firefox-esr=52.8.0-r0" && \
     ln -sf /usr/bin/dbus-daemon /bin/dbus-daemon && \
     ln -sf /usr/bin/dbus-uuidgen /bin/dbus-uuidgen && \
     ln -sf /usr/bin/dbus-binding-tool /dbus-binding-tool && \
