@@ -19,7 +19,7 @@ do
     ##    (echo -e "\nThis package is outdate.\n local: $(apk info -v | grep -e musl-[0-9]?*)\nremote: $(apk search -x musl)\n")
 
     [ "$packagename-$packageversion" != "$(apk search -x $packagename)" ] && \
-       (echo -e "    +-- This package is outdate.\n        +-- local: $packagename-$packageversion\n        \`--remote: $(apk search -x $packagename)\n") && \
+       (echo -e "\`-- This package is outdate.\n    +-- local: $packagename-$packageversion\n    \`--remote: $(apk search -x $packagename)\n") && \
        HASOUTDATEPACKAGE="y"
 
 done
