@@ -31,7 +31,7 @@ build job:
   only:
     - master
   script:
-  - TMPTAG="6.0.7-alpine"
+  - TMPTAG="6.0.8-alpine"
   - docker info
   - echo "$CI_BUILD_TOKEN" | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
   - >-
