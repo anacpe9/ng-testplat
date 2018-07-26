@@ -1,4 +1,4 @@
-FROM anacha/ng:6.0.8-alpine
+FROM anacha/ng:6.1.0-alpine
 
 LABEL maintainer="Anucha Nualsi <ana.cpe9@gmail.com>"
 
@@ -11,14 +11,14 @@ RUN chmod a+x /entrypoint.cha.sh && \
     apk update && \
     apk upgrade && \
     apk add --no-cache --update \
-        ttf-freefont \
-        "eudev=3.2.4-r1" \
-        "dbus=1.10.24-r0" \
-        "dbus-x11=1.10.24-r0" \
-        "xvfb=1.19.5-r0" \
-        "chromium=61.0.3163.100-r0" \
-        "chromium-chromedriver=61.0.3163.100-r0" \
-        "firefox-esr=52.8.0-r0" && \
+    ttf-freefont \
+    "eudev=3.2.5-r2" \
+    "dbus=1.10.24-r1" \
+    "dbus-x11=1.10.24-r1" \
+    "xvfb=1.19.6-r2" \
+    "chromium=64.0.3282.168-r0" \
+    "chromium-chromedriver=64.0.3282.168-r0" \
+    "firefox-esr=52.8.1-r0" && \
     ln -sf /usr/bin/dbus-daemon /bin/dbus-daemon && \
     ln -sf /usr/bin/dbus-uuidgen /bin/dbus-uuidgen && \
     ln -sf /usr/bin/dbus-binding-tool /dbus-binding-tool && \

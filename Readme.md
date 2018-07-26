@@ -3,20 +3,21 @@
 ## docker-image dependencies graph
 
 ```text
-+-- alpine:3.7 (3.962 MB)                                 ====> official image
++-- alpine:3.8 (3.962 MB)                                 ====> official image
     |
-    +-- node:10.4.0-alpine (64.64 MB)                     ====> official image
+    +-- node:10.7.0-alpine (64.64 MB)                     ====> official image
     |   |
     |   +-- anacha/ng:6.1.0-beta.2-alpine (108 MB)        ====> optional ***
-    |   `-- anacha/ng:6.0.8-alpine (108 MB)               ====> base images
+    |   `-- anacha/ng:6.1.0-alpine (108 MB)               ====> base images
     |       |
-    |      (+)-- anacha/ng-testplat:6.0.8-alpine (285 MB) ====> this project ***
+    |      (+)-- anacha/ng-testplat:6.1.0-alpine (285 MB) ====> this project ***
     |       |
-    `-------'--- anacha/e2e-testplat:61-alpine (181 MB)   ====> (Optional for other projects)
+    `-------'--- anacha/e2e-testplat:64-alpine (181 MB)   ====> (Optional for other projects)
 ```
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
 | ------------------------ | --------------- | ----------------- | ------------ |
+| ng-testplat:6.1.0-alpine | ng:6.1.0-alpine | node:10.7.0-alpine| alpine:3.8   |
 | ng-testplat:6.0.8-alpine | ng:6.0.8-alpine | node:10.4.0-alpine| alpine:3.7   |
 | ng-testplat:6.0.7-alpine | ng:6.0.7-alpine | node:10.3.0-alpine| alpine:3.7   |
 | ng-testplat:6.0.5-alpine | ng:6.0.5-alpine | node:10.2.1-alpine| alpine:3.7   |
@@ -44,13 +45,13 @@
 ## e2e-testplat alpine packages
 
 - ttf-freefont
-- eudev=3.2.4-r1
-- dbus=1.10.24-r0
-- dbus-x11=1.10.24-r0
-- xvfb=1.19.5-r0
-- chromium=61.0.3163.100-r0
-- chromium-chromedriver=61.0.3163.100-r0
-- firefox-esr=52.8.0-r0
+- eudev=3.2.5-r2
+- dbus=1.10.24-r1
+- dbus-x11=1.10.24-r1
+- xvfb=1.19.6-r2
+- chromium=64.0.3282.168-r0
+- chromium-chromedriver=64.0.3282.168-r0
+- firefox-esr=52.8.1-r0
 
 ## Source Repository
 
