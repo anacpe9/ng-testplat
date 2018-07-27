@@ -8,15 +8,16 @@
     +-- node:10.7.0-alpine (64.64 MB)                     ====> official image
     |   |
     |   +-- anacha/ng:6.1.0-beta.2-alpine (108 MB)        ====> optional ***
-    |   `-- anacha/ng:6.1.0-alpine (108 MB)               ====> base images
+    |   `-- anacha/ng:6.1.1-alpine (108 MB)               ====> base images
     |       |
-    |      (+)-- anacha/ng-testplat:6.1.0-alpine (285 MB) ====> this project ***
+    |      (+)-- anacha/ng-testplat:6.1.1-alpine (285 MB) ====> this project ***
     |       |
     `-------'--- anacha/e2e-testplat:64-alpine (181 MB)   ====> (Optional for other projects)
 ```
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
 | ------------------------ | --------------- | ----------------- | ------------ |
+| ng-testplat:6.1.1-alpine | ng:6.1.1-alpine | node:10.7.0-alpine| alpine:3.8   |
 | ng-testplat:6.1.0-alpine | ng:6.1.0-alpine | node:10.7.0-alpine| alpine:3.8   |
 | ng-testplat:6.0.8-alpine | ng:6.0.8-alpine | node:10.4.0-alpine| alpine:3.7   |
 | ng-testplat:6.0.7-alpine | ng:6.0.7-alpine | node:10.3.0-alpine| alpine:3.7   |
