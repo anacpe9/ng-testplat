@@ -28,10 +28,10 @@ build job:
   variables:
     DOCKERHUB_REGISTRY: "https://index.docker.io/v1/"
     DOCKER_REGISTRY_DOCKERHUB_REPO: "anacha/ng-testplat"
+    TMPTAG: "6.1.2-alpine"
   only:
     - master
   script:
-  - TMPTAG="6.1.1-alpine"
   - docker info
   - echo "$CI_BUILD_TOKEN" | docker login -u gitlab-ci-token --password-stdin $CI_REGISTRY
   - >-
