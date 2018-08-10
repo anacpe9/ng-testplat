@@ -7,8 +7,8 @@
     |
     +-- node:10.8.0-alpine (71.40 MB)                     ====> official image
     |   |
-    |   +-- anacha/ng:6.2.0-beta.0-alpine (331 MB)        ====> optional ***
-    |   `-- anacha/ng:6.1.2-alpine (331 MB)               ====> base images
+    |   +-- anacha/ng:6.2.0-beta.2-alpine (331 MB)        ====> optional ***
+    |   `-- anacha/ng:6.1.3-alpine (331 MB)               ====> base images
     |       |
     |      (+)-- anacha/ng-testplat:6.1.2-alpine (285 MB) ====> this project ***
     |       |
@@ -17,6 +17,7 @@
 
 | Image                    | base-0 image    | base-1 image      | base-2 image |
 | ------------------------ | --------------- | ----------------- | ------------ |
+| ng-testplat:6.1.3-alpine | ng:6.1.3-alpine | node:10.8.0-alpine| alpine:3.8   |
 | ng-testplat:6.1.2-alpine | ng:6.1.2-alpine | node:10.8.0-alpine| alpine:3.8   |
 | ng-testplat:6.1.1-alpine | ng:6.1.1-alpine | node:10.7.0-alpine| alpine:3.8   |
 | ng-testplat:6.1.0-alpine | ng:6.1.0-alpine | node:10.7.0-alpine| alpine:3.8   |
@@ -51,8 +52,8 @@
 - dbus=1.10.24-r1
 - dbus-x11=1.10.24-r1
 - xvfb=1.19.6-r2
-- chromium=64.0.3282.168-r0
-- chromium-chromedriver=64.0.3282.168-r0
+- chromium=68.0.3440.75-r0
+- chromium-chromedriver=68.0.3440.75-r0
 - firefox-esr=52.8.1-r0
 
 ## Source Repository

@@ -1,4 +1,4 @@
-FROM anacha/ng:6.1.2-alpine
+FROM anacha/ng:6.1.3-alpine
 
 LABEL maintainer="Anucha Nualsi <ana.cpe9@gmail.com>"
 
@@ -16,8 +16,8 @@ RUN chmod a+x /entrypoint.cha.sh && \
     "dbus=1.10.24-r1" \
     "dbus-x11=1.10.24-r1" \
     "xvfb=1.19.6-r2" \
-    "chromium=64.0.3282.168-r0" \
-    "chromium-chromedriver=64.0.3282.168-r0" \
+    "chromium=68.0.3440.75-r0" \
+    "chromium-chromedriver=68.0.3440.75-r0" \
     "firefox-esr=52.8.1-r0" && \
     ln -sf /usr/bin/dbus-daemon /bin/dbus-daemon && \
     ln -sf /usr/bin/dbus-uuidgen /bin/dbus-uuidgen && \

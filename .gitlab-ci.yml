@@ -18,8 +18,6 @@ check-packages job:
   stage: check-packages
   image: alpine:3.8
   script:
-  - cat /etc/alpine-release
-  - apk update
   - chmod +x checkpackages.sh
   - ./checkpackages.sh
 
@@ -28,7 +26,7 @@ build job:
   variables:
     DOCKERHUB_REGISTRY: "https://index.docker.io/v1/"
     DOCKER_REGISTRY_DOCKERHUB_REPO: "anacha/ng-testplat"
-    TMPTAG: "6.1.2-alpine"
+    TMPTAG: "6.1.3-alpine"
   only:
     - master
   script:

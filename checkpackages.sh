@@ -2,10 +2,12 @@
 
 set -e
 
-PACKAGES="eudev=3.2.5-r2 dbus=1.10.24-r1 dbus-x11=1.10.24-r1 xvfb=1.19.6-r2 chromium=64.0.3282.168-r0 chromium-chromedriver=64.0.3282.168-r0 firefox-esr=52.8.1-r0"
+PACKAGES="eudev=3.2.5-r2 dbus=1.10.24-r1 dbus-x11=1.10.24-r1 xvfb=1.19.6-r2 chromium=68.0.3440.75-r0 chromium-chromedriver=68.0.3440.75-r0 firefox-esr=52.8.1-r0"
 
 echo "alpine $(cat /etc/alpine-release)"
 HASOUTDATEPACKAGE="n"
+
+apk update
 
 for package in $PACKAGES
 do
