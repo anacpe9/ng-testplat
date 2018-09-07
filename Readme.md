@@ -5,47 +5,48 @@
 ```text
 +-- alpine:3.8 (4.41 MB)                                  ====> official image
     |
-    +-- node:10.9.0-alpine (71.40 MB)                     ====> official image
+    +-- node:10.10.0-alpine (71.40 MB)                    ====> official image
     |   |
-    |   +-- anacha/ng:6.2.0-rc.0-alpine (331 MB)          ====> optional ***
-    |   `-- anacha/ng:6.1.5-alpine (331 MB)               ====> base images
+    |   +-- anacha/ng:7.0.0-beta.2-alpine (331 MB)        ====> optional ***
+    |   `-- anacha/ng:6.2.1-alpine (331 MB)               ====> base images
     |       |
-    |      (+)-- anacha/ng-testplat:6.1.5-alpine (285 MB) ====> this project ***
+    |      (+)-- anacha/ng-testplat:6.2.1-alpine (285 MB) ====> this project ***
     |       |
     `-------'--- anacha/e2e-testplat:68-alpine (201 MB)   ====> (Optional for other projects)
 ```
 
-| Image                    | base-0 image    | base-1 image      | base-2 image |
-| ------------------------ | --------------- | ----------------- | ------------ |
-| ng-testplat:6.1.5-alpine | ng:6.1.5-alpine | node:10.9.0-alpine| alpine:3.8   |
-| ng-testplat:6.1.4-alpine | ng:6.1.4-alpine | node:10.9.0-alpine| alpine:3.8   |
-| ng-testplat:6.1.3-alpine | ng:6.1.3-alpine | node:10.8.0-alpine| alpine:3.8   |
-| ng-testplat:6.1.2-alpine | ng:6.1.2-alpine | node:10.8.0-alpine| alpine:3.8   |
-| ng-testplat:6.1.1-alpine | ng:6.1.1-alpine | node:10.7.0-alpine| alpine:3.8   |
-| ng-testplat:6.1.0-alpine | ng:6.1.0-alpine | node:10.7.0-alpine| alpine:3.8   |
-| ng-testplat:6.0.8-alpine | ng:6.0.8-alpine | node:10.4.0-alpine| alpine:3.7   |
-| ng-testplat:6.0.7-alpine | ng:6.0.7-alpine | node:10.3.0-alpine| alpine:3.7   |
-| ng-testplat:6.0.5-alpine | ng:6.0.5-alpine | node:10.2.1-alpine| alpine:3.7   |
-| ng-testplat:6.0.3-alpine | ng:6.0.3-alpine | node:10.1.0-alpine| alpine:3.7   |
-| ng-testplat:1.7.4-alpine | ng:1.7.4-alpine | node:9.10.1-alpine| alpine:3.6   |
-| ng-testplat:1.7.3-alpine | ng:1.7.3-alpine | node:9.7.1-alpine | alpine:3.6   |
-| ng-testplat:1.7.2-alpine | ng:1.7.2-alpine | node:9.6.1-alpine | alpine:3.6   |
-| ng-testplat:1.7.1-alpine | ng:1.7.1-alpine | node:9.6.1-alpine | alpine:3.6   |
-| ng-testplat:1.7.0-alpine | ng:1.7.0-alpine | node:9.5.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.8-alpine | ng:1.6.8-alpine | node:9.5.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.7-alpine | ng:1.6.7-alpine | node:9.5.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.6-alpine | ng:1.6.6-alpine | node:9.4.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.5-alpine | ng:1.6.5-alpine | node:9.4.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.4-alpine | ng:1.6.4-alpine | node:9.4.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.3-alpine | ng:1.6.3-alpine | node:9.3.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.2-alpine | ng:1.6.2-alpine | node:9.3.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.1-alpine | ng:1.6.1-alpine | node:9.3.0-alpine | alpine:3.6   |
-| ng-testplat:1.6.0-alpine | ng:1.6.0-alpine | node:9.2.0-alpine | alpine:3.6   |
-| ng-testplat:1.5.5-alpine | ng:1.5.5-alpine | node:9.2.0-alpine | alpine:3.6   |
-| ng-testplat:1.5.4-alpine | ng:1.5.4-alpine | node:9.2.0-alpine | alpine:3.6   |
-| ng-testplat:1.5.3-alpine | ng:1.5.3-alpine | node:9.2.0-alpine | alpine:3.6   |
-| ng-testplat:1.5.2-alpine | ng:1.5.2-alpine | node:9.2.0-alpine | alpine:3.6   |
-| ng-testplat:1.5.2-alpine | ng:1.5.0-alpine | node:9.0.0-alpine | alpine:3.6   |
+| Image                    | base-0 image    | base-1 image        | base-2 image |
+| ------------------------ | --------------- | ------------------- | ------------ |
+| ng-testplat:6.2.1-alpine | ng:6.2.1-alpine | node:10.10.0-alpine | alpine:3.8   |
+| ng-testplat:6.1.5-alpine | ng:6.1.5-alpine | node:10.9.0-alpine  | alpine:3.8   |
+| ng-testplat:6.1.4-alpine | ng:6.1.4-alpine | node:10.9.0-alpine  | alpine:3.8   |
+| ng-testplat:6.1.3-alpine | ng:6.1.3-alpine | node:10.8.0-alpine  | alpine:3.8   |
+| ng-testplat:6.1.2-alpine | ng:6.1.2-alpine | node:10.8.0-alpine  | alpine:3.8   |
+| ng-testplat:6.1.1-alpine | ng:6.1.1-alpine | node:10.7.0-alpine  | alpine:3.8   |
+| ng-testplat:6.1.0-alpine | ng:6.1.0-alpine | node:10.7.0-alpine  | alpine:3.8   |
+| ng-testplat:6.0.8-alpine | ng:6.0.8-alpine | node:10.4.0-alpine  | alpine:3.7   |
+| ng-testplat:6.0.7-alpine | ng:6.0.7-alpine | node:10.3.0-alpine  | alpine:3.7   |
+| ng-testplat:6.0.5-alpine | ng:6.0.5-alpine | node:10.2.1-alpine  | alpine:3.7   |
+| ng-testplat:6.0.3-alpine | ng:6.0.3-alpine | node:10.1.0-alpine  | alpine:3.7   |
+| ng-testplat:1.7.4-alpine | ng:1.7.4-alpine | node:9.10.1-alpine  | alpine:3.6   |
+| ng-testplat:1.7.3-alpine | ng:1.7.3-alpine | node:9.7.1-alpine   | alpine:3.6   |
+| ng-testplat:1.7.2-alpine | ng:1.7.2-alpine | node:9.6.1-alpine   | alpine:3.6   |
+| ng-testplat:1.7.1-alpine | ng:1.7.1-alpine | node:9.6.1-alpine   | alpine:3.6   |
+| ng-testplat:1.7.0-alpine | ng:1.7.0-alpine | node:9.5.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.8-alpine | ng:1.6.8-alpine | node:9.5.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.7-alpine | ng:1.6.7-alpine | node:9.5.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.6-alpine | ng:1.6.6-alpine | node:9.4.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.5-alpine | ng:1.6.5-alpine | node:9.4.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.4-alpine | ng:1.6.4-alpine | node:9.4.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.3-alpine | ng:1.6.3-alpine | node:9.3.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.2-alpine | ng:1.6.2-alpine | node:9.3.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.1-alpine | ng:1.6.1-alpine | node:9.3.0-alpine   | alpine:3.6   |
+| ng-testplat:1.6.0-alpine | ng:1.6.0-alpine | node:9.2.0-alpine   | alpine:3.6   |
+| ng-testplat:1.5.5-alpine | ng:1.5.5-alpine | node:9.2.0-alpine   | alpine:3.6   |
+| ng-testplat:1.5.4-alpine | ng:1.5.4-alpine | node:9.2.0-alpine   | alpine:3.6   |
+| ng-testplat:1.5.3-alpine | ng:1.5.3-alpine | node:9.2.0-alpine   | alpine:3.6   |
+| ng-testplat:1.5.2-alpine | ng:1.5.2-alpine | node:9.2.0-alpine   | alpine:3.6   |
+| ng-testplat:1.5.2-alpine | ng:1.5.0-alpine | node:9.0.0-alpine   | alpine:3.6   |
 
 ## e2e-testplat alpine packages
 
@@ -56,7 +57,7 @@
 - xvfb=1.19.6-r2
 - chromium=68.0.3440.75-r0
 - chromium-chromedriver=68.0.3440.75-r0
-- firefox-esr=52.8.1-r0
+- firefox-esr=52.9.0-r0
 
 ## Source Repository
 
