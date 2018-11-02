@@ -15,7 +15,7 @@ RUN chmod a+x /entrypoint.cha.sh && \
     "eudev=3.2.5-r2" \
     "dbus=1.10.24-r1" \
     "dbus-x11=1.10.24-r1" \
-    "xvfb=1.19.6-r2" \
+    "xvfb=1.19.6-r3" \
     "chromium=68.0.3440.75-r0" \
     "chromium-chromedriver=68.0.3440.75-r0" \
     "firefox-esr=52.9.0-r0" && \
