@@ -5,10 +5,10 @@
 ```text
 +-- alpine:3.8 (4.41 MB)                                  ====> official image
     |
-    +-- node:11.0.0-alpine (71.40 MB)                     ====> official image
+    +-- node:11.1.0-alpine (71.40 MB)                     ====> official image
     |   |
     |   +-- anacha/ng:7.0.0-rc.3-alpine (331 MB)          ====> optional ***
-    |   `-- anacha/ng:7.0.4-alpine (331 MB)               ====> base images
+    |   `-- anacha/ng:7.0.5-alpine (331 MB)               ====> base images
     |       |
     |      (+)-- anacha/ng-testplat:7.0.4-alpine (285 MB) ====> this project ***
     |       |
@@ -17,6 +17,7 @@
 
 | Image                    | base-0 image    | base-1 image        | base-2 image |
 | ------------------------ | --------------- | ------------------- | ------------ |
+| ng-testplat:7.0.5-alpine | ng:7.0.5-alpine | node:11.1.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.4-alpine | ng:7.0.4-alpine | node:11.0.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.3-alpine | ng:7.0.3-alpine | node:11.0.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.2-alpine | ng:7.0.2-alpine | node:11.0.0-alpine  | alpine:3.8   |
