@@ -17,6 +17,7 @@
 
 | Image                    | base-0 image    | base-1 image        | base-2 image |
 | ------------------------ | --------------- | ------------------- | ------------ |
+| ng-testplat:6.2.7-alpine | ng:6.2.7-alpine | node:11.1.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.5-alpine | ng:7.0.5-alpine | node:11.1.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.4-alpine | ng:7.0.4-alpine | node:11.0.0-alpine  | alpine:3.8   |
 | ng-testplat:7.0.3-alpine | ng:7.0.3-alpine | node:11.0.0-alpine  | alpine:3.8   |
