@@ -1,4 +1,4 @@
-FROM anacha/ng:7.2.3-alpine
+FROM anacha/ng:7.3.0-alpine
 
 LABEL maintainer="Anucha Nualsi <ana.cpe9@gmail.com>"
 
