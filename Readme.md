@@ -3,7 +3,7 @@
 ## docker-image dependencies graph
 
 ```text
-+-- alpine:3.8 (4.41 MB)                                  ====> official image
++-- alpine:3.9 (4.41 MB)                                  ====> official image
     |
     +-- node:11.10.0-alpine (71.40 MB)                    ====> official image
     |   |
@@ -77,13 +77,13 @@
 ## e2e-testplat alpine packages
 
 - ttf-freefont
-- eudev=3.2.5-r2
+- eudev=3.2.7-r0
 - dbus=1.10.24-r1
 - dbus-x11=1.10.24-r1
 - xvfb=1.19.6-r3
-- chromium=68.0.3440.75-r0
-- chromium-chromedriver=68.0.3440.75-r0
-- firefox-esr=52.9.0-r0
+- chromium=71.0.3578.98-r2
+- chromium-chromedriver=71.0.3578.98-r2
+- firefox-esr=60.4.0-r1
 
 ## Source Repository
 
