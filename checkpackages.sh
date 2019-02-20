@@ -8,6 +8,7 @@ echo "alpine $(cat /etc/alpine-release)"
 HASOUTDATEPACKAGE="n"
 
 apk update
+apk upgrade
 
 for package in $PACKAGES
 do
