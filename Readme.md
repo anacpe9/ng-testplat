@@ -80,7 +80,7 @@
 - eudev=3.2.7-r0
 - dbus=1.10.24-r1
 - dbus-x11=1.10.24-r1
-- xvfb=1.19.6-r3
+- xvfb=1.20.3-r1
 - chromium=71.0.3578.98-r2
 - chromium-chromedriver=71.0.3578.98-r2
 - firefox-esr=60.4.0-r1
