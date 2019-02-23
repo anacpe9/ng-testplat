@@ -82,8 +82,8 @@
 - dbus=1.10.24-r1
 - dbus-x11=1.10.24-r1
 - xvfb=1.20.3-r1
-- chromium=71.0.3578.98-r2
-- chromium-chromedriver=71.0.3578.98-r2
+- chromium=72.0.3626.109-r0
+- chromium-chromedriver=72.0.3626.109-r0
 - firefox-esr=60.4.0-r1
 
 ## Source Repository
